@@ -1,0 +1,68 @@
+/**
+* Custom Theming for Angular Material
+* Generated theme by Material Theme Generator
+* For more information: https://material.angular.io/guide/theming
+*/
+@use '@angular/material' as mat;
+
+@use "bootstrap/scss/bootstrap";
+
+// Include component theme styles 
+@use "./assets/themes/default/theme.scss";
+
+// Fonts
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+// Fonts Config
+$fontConfig: (
+  plain-family: Roboto,
+  brand-family: Open Sans,
+  bold-weight: 900,
+  medium-weight: 500,
+  regular-weight: 300,
+);
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+$light-theme: mat.m2-define-light-theme((
+  color: (
+    primary: mat.m2-define-palette(mat.$m2-blue-palette),
+    accent: mat.m2-define-palette(mat.$m2-pink-palette),
+  ),
+  typography: ($fontConfig),
+  density: 0
+));
+
+$dark-theme: mat.m2-define-dark-theme((
+  color: (
+    primary: mat.m2-define-palette(mat.$m2-pink-palette),
+    accent: mat.m2-define-palette(mat.$m2-blue-grey-palette),
+  ),
+  typography: ($fontConfig),
+  density: 0
+));
+
+// Apply the light theme by default
+@include mat.core-theme($light-theme);
+@include mat.all-component-themes($light-theme);
+
+// Apply the dark theme only when the user prefers dark themes.
+@media (prefers-color-scheme: dark) {
+  // Use the `-color` mixins to only apply color styles without reapplying the same
+  // typography and density styles.
+  @include mat.core-color($dark-theme);
+  @include mat.all-component-colors($dark-theme);
+}
+
+.light-theme {
+  @include mat.core-color($light-theme);
+  @include mat.button-color($light-theme);
+}
+
+.dark-theme {
+  @include mat.core-color($dark-theme);
+  @include mat.button-color($dark-theme);
+}

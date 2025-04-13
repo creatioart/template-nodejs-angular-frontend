@@ -1,0 +1,68 @@
+{
+  "name": "CreatioART Template",
+  "short_name": "CreatioART",
+  "display": "standalone",
+  "description": "Construcción y desarrollo de aplicaciones que marcan la diferencia. En Creatio ART, no solo creamos soluciones innovadoras, sino construimos experiencias digitales únicas que impulsan tu vida hacia el futuro. ¡Descubre el poder de la innovación en cada clic!",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "\/assets/favicon/android-icon-36x36.png",
+      "sizes": "36x36",
+      "type": "image\/png",
+      "density": "0.75"
+    },
+    {
+      "src": "\/assets/favicon/android-icon-48x48.png",
+      "sizes": "48x48",
+      "type": "image\/png",
+      "density": "1.0"
+    },
+    {
+      "src": "\/assets/favicon/android-icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image\/png",
+      "density": "1.5"
+    },
+    {
+      "src": "\/assets/favicon/android-icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image\/png",
+      "density": "2.0"
+    },
+    {
+      "src": "\/assets/favicon/android-icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image\/png",
+      "density": "3.0"
+    },
+    {
+      "src": "\/assets/favicon/android-icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image\/png",
+      "density": "4.0"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff" ,
+  "screenshots": [
+    {
+      "src": "\/assets\/screenshots\/screenshots_1280x720.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpg",
+      "platform": "wide",
+      "label": "Vista principal de la aplicación"
+    },
+    {
+      "src": "\/assets\/screenshots\/screenshots_1280x720.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpg",
+      "form_factor": "wide",
+      "label": "Vista principal de la aplicación"
+    }
+  ],
+  "categories": [
+    "business",
+    "productivity",
+    "utilities"
+  ]
+}

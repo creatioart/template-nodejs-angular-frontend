@@ -1,0 +1,118 @@
+{
+  "root": true,
+  "ignorePatterns": [
+    "projects/**/*"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "*.ts"
+      ],
+      "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@angular-eslint/recommended",
+        "plugin:@angular-eslint/template/process-inline-templates"
+      ],
+      "rules": {
+        "block-scoped-var": "error",
+        "eqeqeq": "error",
+        "no-var": "error",
+        "prefer-const": "error",
+        "eol-last": "error",
+        "prefer-arrow-callback": "off",
+        "no-trailing-spaces": "error",
+        "quotes": ["error", "single", {"avoidEscape": true, "allowTemplateLiterals": true}],
+        "no-console": "off",
+        "no-regex-spaces": "error",
+        "no-debugger": "error",
+        "no-unused-vars": "off",
+        "no-mixed-spaces-and-tabs": "error",
+        "no-undef": "off",
+        "no-template-curly-in-string": "warn",
+        "consistent-return": "error",
+        "array-callback-return": "error",
+        "no-alert": "error",
+        "no-caller": "error",
+        "no-eq-null": "error",
+        "no-eval": "error",
+        "no-extend-native": "warn",
+        "no-extra-bind": "warn",
+        "no-extra-label": "warn",
+        "no-floating-decimal": "error",
+        "no-implicit-coercion": "warn",
+        "no-loop-func": "warn",
+        "no-new-func": "error",
+        "no-new-wrappers": "warn",
+        "no-throw-literal": "error",
+        "prefer-promise-reject-errors": "error",
+        "for-direction": "error",
+        "getter-return": "error",
+        "no-await-in-loop": "off",
+        "no-compare-neg-zero": "error",
+        "no-restricted-properties": [
+          "error",
+          {
+            "object": "describe",
+            "property": "only"
+          },
+          {
+            "object": "it",
+            "property": "only"
+          }
+        ],
+        "no-catch-shadow": "warn",
+        "no-shadow-restricted-names": "error",
+        "callback-return": "error",
+        "handle-callback-err": "error",
+        "no-path-concat": "warn",
+        "promise/always-return": "off",
+        "promise/catch-or-return": "off",
+        "promise/no-nesting": "off",
+        "semi": ["error", "always"],
+        "@typescript-eslint/no-var-requires": "off",
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/explicit-module-boundary-types": "off",
+        "@typescript-eslint/no-empty-interface": "off",
+        "max-len": [
+          "error",
+          {
+            "code": 120,
+            "tabWidth": 2,
+            "ignorePattern": "@Matches|^import\\s.+\\sfrom\\s.+;$|^export\\s.+\\sfrom\\s.+;$",
+            "ignoreComments": true,
+            "ignoreTrailingComments": true
+          }
+        ],
+        "node/no-extraneous-import": "off",
+        "@angular-eslint/prefer-standalone": "off",
+        "@angular-eslint/directive-selector": [
+          "error",
+          {
+            "type": "attribute",
+            "prefix": "app",
+            "style": "camelCase"
+          }
+        ],
+        "@angular-eslint/component-selector": [
+          "error",
+          {
+            "type": "element",
+            "prefix": "app",
+            "style": "kebab-case"
+          }
+        ]
+      }
+    },
+    {
+      "files": [
+        "*.html"
+      ],
+      "extends": [
+        "plugin:@angular-eslint/template/recommended",
+        "plugin:@angular-eslint/template/accessibility"
+      ],
+      "rules": {}
+    }
+  ]
+}

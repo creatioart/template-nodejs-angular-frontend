@@ -1,0 +1,42 @@
+// Here you can add layout styles
+
+html {
+  font-family: Roboto, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.fixed-fab {
+  position: fixed !important;
+  right: 2%;
+  bottom: 3%;
+}
+
+.m-t-10 {
+  margin-top: 10px;
+}
+
+.m-b-10 {
+  margin-bottom: 10px;
+}
+
+.m-l-10 {
+  margin-left: 10px;
+}
+
+.m-r-10 {
+  margin-right: 10px;
+}

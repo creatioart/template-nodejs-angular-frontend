@@ -1,0 +1,11 @@
+// If you want to override variables do it here
+@use "global/variables";
+
+// Import global styles
+@use "global/layout";
+@use "global/mixins";
+@use "global/animate";
+
+// Import component styles
+@use "component/icon";
+@use "component/spinner";

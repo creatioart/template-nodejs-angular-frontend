@@ -1,0 +1,10 @@
+**/node_modules
+dist/
+protos/
+scripts/
+
+# Angular
+.angular/
+
+# JS 
+projects/src/assets/**/*.js

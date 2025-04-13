@@ -1,0 +1,31 @@
+# Editor configuration, see https://editorconfig.org
+
+# top-most EditorConfig file
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Set default charset for all JS / HTML / SCSS files
+[*.{js,html,scss}]
+charset = utf-8
+
+# Indentation override for all JS under lib directory
+[src/**.{js,html,scss}]
+indent_style = space
+indent_size = 4
+
+# Quote override for all TS files
+[*.ts]
+quote_type = single
+ij_typescript_use_double_quotes = false
+
+# Quote readme files
+[*.md]
+max_line_length = off
+trim_trailing_whitespace = false

@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, '../../coverage/ngx-istreamer'),
+      dir: require('path').join(__dirname, '../../coverage/template-nodejs-angular-frontend'),
       subdir: '.',
       reporters: [
         { type: 'html' },
